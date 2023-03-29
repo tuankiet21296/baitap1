@@ -1,0 +1,117 @@
+//Global
+body{
+    margin: 0;
+    padding: 0;
+}
+
+//Varible
+.avatar-bg{
+    background-color: yellow;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 32px;
+    .header-logo{
+        a{
+            text-decoration: none;
+            color: black;
+            font-size: 24px;
+            font-weight: 700;
+        }
+    }
+    .header-search{
+        width: 600px;
+        input{
+            width: 100%;
+            padding: 20px 12px;
+            border-radius: 25px;
+            background-color: #f3f4f6;
+            border: none;
+        }
+    }
+    .header-avatar{
+        display: flex;
+        .header-avatar-bg{
+            background-color: yellow;
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            p{
+                text-align: center;
+
+            }
+        }
+    }
+}
+
+.main-container{
+    display: grid;
+    grid-template-columns: 20% 55% 25%;
+    border:2px solid;
+    border-color: #e5e7eb;
+    .main-left{
+        max-width: 100%;
+        .main-left-content{
+            
+            .main-left-content-search{
+                border-bottom:2px  solid;
+                border-color: #e5e7eb;
+                display: flex;
+                justify-content: center;
+                input{
+                    padding: 12px 50px;
+                    margin: 12px 24px;
+                    border-radius: 20px;
+                    border: 1px solid #f3f4f6;
+                    background-color: #f3f4f6;
+                }
+            }
+            .main-left-content-user{
+                border-bottom:2px solid;
+                border-color: #e5e7eb;
+                display: flex;
+                align-items: center;
+                .avatar-bg{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    margin: 0 12px;
+                    a{
+                        text-decoration: none;
+                    }
+                }
+                .name{
+                    span{
+                        display: block;
+                        font-size: 14px;
+                        font-weight: normal;
+                    }
+                }
+            }
+            .main-left-content-user:last-child{
+                //border-bottom: none;
+            }
+        }
+    }
+    .main-body{
+        border-left: 2px  solid;
+        border-color: #e5e7eb;
+
+    }
+    .main-right{
+        border-left:2px  solid;
+        border-color: #e5e7eb;
+        padding: 6px 16px;
+        img{
+            max-width: 80%;
+            border-radius: 20px;
+        }
+
+    }
+}
