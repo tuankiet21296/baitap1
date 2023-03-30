@@ -5,62 +5,82 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.socket.io/4.5.4/socket.io.min.js"></script>
     <title>GoingChat</title>
 </head>
 <body>
 
-    <header class="header-container">
-        <div class="header-logo">
-            <a href="#">GoingChat</a>
-        </div>
-        <div class="header-search">
-            <input type="text" placeholder="Search url">
-        </div>
-        <div class="header-avatar">
-            <div class="header-avatar-bg">
-                <p>K</p>
+    <div class="main">
+        <header class="header-container">
+            <div class="header-logo">
+                <a href="#">GoingChat</a>
             </div>
-        </div>
-    </header>
-
-    <section class="main-container">
-        <div class="main-left">
-            <div class="main-left-content">
-                <div class="main-left-content-search">
-                    <input type="text" placeholder="Search chatting">
-                </div>
-                <div class="main-left-content-user">
-                    <div class="avatar-bg"><a href="#">K</a></div>
-                    <h1 class="name">Luis1994<span>Pick me at 9:00pm</span></h1>
-                </div>
-                <div class="main-left-content-user">
-                    <div class="avatar-bg"><a href="#">K</a></div>
-                    <h1 class="name">Luis1994<span>Pick me at 9:00pm</span></h1>
-                </div>
-                <div class="main-left-content-user">
-                    <div class="avatar-bg"><a href="#">K</a></div>
-                    <h1 class="name">Luis1994<span>Pick me at 9:00pm</span></h1>
+            <div class="header-search">
+                <input type="text" placeholder="Search url">
+            </div>
+            <div class="header-avatar">
+                <div class="header-avatar-bg">
+                    <p>K</p>
                 </div>
             </div>
-        </div>
-        <div class="main-body">
-
-        </div>
-        <div class="main-right">
-            <h1>Mern Stack Group</h1>
-            <img src="./photo-1558459654-c430be5b0a44.jpg" alt="">
-            <h3>Created 22 Sep 2021</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                Qui aut obcaecati ducimus quasi hic, consectetur delectus accusamus</p>
-        </div>
-    </section>
-
-    <footer class="footer-chat">
-
-    </footer>
+        </header>
+    
+        <section class="main-container">
+            <div class="main-left">
+                <div class="main-left-content">
+                    <div class="main-left-content-search">
+                        <input type="text" placeholder="Search chatting">
+                    </div>
+                    <div class="main-left-content-user">
+                        <div class="avatar-bg"><a href="#">K</a></div>
+                        <h1 class="name">Luis1994<span>Pick me at 9:00pm</span></h1>
+                    </div>
+                    <div class="main-left-content-user">
+                        <div class="avatar-bg"><a href="#">K</a></div>
+                        <h1 class="name">Luis1994<span>Pick me at 9:00pm</span></h1>
+                    </div>
+                    <div class="main-left-content-user">
+                        <div class="avatar-bg"><a href="#">K</a></div>
+                        <h1 class="name">Luis1994<span>Pick me at 9:00pm</span></h1>
+                    </div>
+                </div>
+            </div>
+            <div class="main-body">
+                <div id="chat-content">
+                        <!-- <div class="chat-user">
+                        <div class="avatar-bg-chat">K</div>
+                        <div class="chat-content-left">
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="chat-user chat-right">
+                        <div class="avatar-bg-chat">K</div>
+                        <div class="chat-content-right">
+                            <p></p>
+                        </div>
+                    </div> -->
+                </div>
+                <div class="type-chat">
+                    <input id="messages"  type="text" placeholder="Type chat messages here...">
+                </div>
+            </div>
+            <div class="main-right">
+                <h1>Mern Stack Group</h1>
+                <img src="./photo-1558459654-c430be5b0a44.jpg" alt="">
+                <h3>Created 22 Sep 2021</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                    Qui aut obcaecati ducimus quasi hic, consectetur delectus accusamus</p>
+            </div>
+        </section>
+    
+        <!-- <footer class="footer-chat">
+            <h3>This a Chat Messages by rahulsya. Component details</h3>
+        </footer> -->
+    </div>
 
 
 
 <script src="./main.js"></script>
+
 </body>
 </html>
